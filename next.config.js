@@ -5,4 +5,4 @@ module.exports = withMdxEnhanced({
   defaultLayout: true,
   fileExtensions: ["mdx"],
   usesSrc: false,
-})();
+})({ webpack5: false });

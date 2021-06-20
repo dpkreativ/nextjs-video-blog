@@ -30,6 +30,9 @@ const PostLayout = ({ children, frontMatter }) => {
             margin: 2rem auto;
             padding: 0 1rem;
           }
+          main h1 {
+            font-size: 2.5rem;
+          }
           main time {
             font-style: italic;
           }

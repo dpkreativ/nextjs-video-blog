@@ -9,6 +9,7 @@ const PostLayout = ({ children, frontMatter }) => {
       <Head>
         <title>{title}</title>
       </Head>
+
       <main>
         <article>
           <h1>{title}</h1>
@@ -28,6 +29,9 @@ const PostLayout = ({ children, frontMatter }) => {
             max-width: 800px;
             margin: 2rem auto;
             padding: 0 1rem;
+          }
+          main time {
+            font-style: italic;
           }
           main .content {
             margin: 2rem 0;

@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>A Video Blog</h1>
-        <div className={styles.grid}>
+        <section className={styles.grid}>
           {posts.map((post) => {
             const { title, path, author, date, description } = post;
             return (
@@ -28,14 +28,14 @@ export default function Home({ posts }) {
                       {author} | <span>{date}</span>
                     </p>
                     <Link href={path}>
-                      <a>Read more &rarr;</a>
+                      <a>See more &rarr;</a>
                     </Link>
                   </div>
                 </a>
               </Link>
             );
           })}
-        </div>
+        </section>
       </main>
     </div>
   );
